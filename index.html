@@ -3,10 +3,157 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="wrapper clearfix">
+        <div class="logo">
+          <a class="logo__link"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Студия</a></li>
+            <li class="main-nav__item"><a href="#">Клиенты</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block"><a href="#">Корзина</a></div>
+      </div>
+      <div class="slider">
+        <ul class="wrapper">
+          <li class="slide_container">
+            <input type="radio" name="slide_switcher" id="control_1" checked>
+            <label for="control_1" class="switcher"></label>
+            <div class="slide">
+              <h2 class="main_page_header">Долго, дорого, <br>скрупулезно.</h2>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#" title="Узнать больше">Узнать больше</a>
+            </div>
+          </li>
+          <li class="slide_container">
+            <input type="radio" name="slide_switcher" id="control_2">
+            <label for="control_2" class="switcher"></label>
+            <div class="slide">
+              <h2 class="main_page_header">Любим математику как никто другой</h2>
+              <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+              <a class="btn" href="#" title="Узнать больше">Узнать больше</a>
+            </div>
+          </li>
+          <li class="slide_container">
+            <input type="radio" name="slide_switcher" id="control_3">
+            <label for="control_3" class="switcher"></label>
+            <div class="slide">
+              <h2 class="main_page_header">Только ночь, только хардкор!</h2>
+              <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+              <a class="btn" href="#" title="Узнать больше">Узнать больше</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper clearfix">
+        <section class="service clearfix">
+          <div class="service__item">
+            <div class="service__picture"><img src="img/service-1.jpg" width="300" height="146" alt="Веб-сайты"></div>
+            <h2 class="service__title">Веб-сайты</h2>
+            <p class="service__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="service__link">Заказать</a>
+          </div>
+          <div class="service__item">
+            <div class="service__picture"><img src="img/service-2.jpg" width="300" height="146" alt="Приложения"></div>
+            <h2 class="service__title">Приложения</h2>
+            <p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="service__link">Заказать</a>
+          </div>
+          <div class="service__item">
+            <div class="service__picture"><img src="img/service-3.jpg" width="300" height="146" alt="Презентации"></div>
+            <h2 class="service__title">Презентации</h2>
+            <p class="service__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="service__link">Заказать</a>
+          </div>
+        </section>
+        <section class="about clearfix">
+          <div class="about__description">
+            <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+            <p class="about__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="about__list-title">Выполняем заказы на разработку:</h3>
+            <ul class="about__list">
+              <li class="about__item">Веб-сайтов любой сложности</li>
+              <li class="about__item">Мобильных приложений для iOS и Android</li>
+              <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="statistic">
+            <div class="statistic__picture"><img src="img/stat-logo.jpg" width="360" height="208" alt="Nerds"></div>
+            <h3 class="statistic__title">с 2004 года любим точность во всем:</h3>
+            <ul class="statistic__list">
+              <li class="statistic__item">146<sup>%</sup><span>Уровень самоотдачи</span></li>
+              <li class="statistic__item">100<sup>%</sup><span>Соблюдение сроков</span></li>
+              <li class="statistic__item">50<sup>%</sup><span>Минимальная предоплата</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="client">
+          <div class="client__picture"><a href="#" class="client__link"><img src="img/logo-Academy-1.png" width="199" height="68" alt="HTML Academy"></a></div>
+          <div class="client__picture"><a href="#" class="client__link"><img src="img/logo-Barbershop-2.png" width="209" height="87" alt="Borodinsky"></a></div>
+          <div class="client__picture"><a href="#" class="client__link"><img src="img/logo-Pink-3.png" width="185" height="52" alt="Pink"></a></div>
+          <div class="client__picture"><a href="#" class="client__link"><img src="img/logo-Mishka-4.png" width="173" height="84" alt="Mishka"></a></div>
+        </section>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461603503!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1477489322943" style="border:0" allowfullscreen="" width="100%" height="416"></iframe>
+        <div class="write-us">
+          <h2 class="write-us__title">Nёrds Design Studio</h2>
+          <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+          <div class="phone">
+            <span>тел.</span><a href="tel:+78122757575"> +7 (812) 275-75-75</a>
+          </div>
+          <a class="btn writeus-btn" href="#">Напишите нам</a>
+        </div>
+        <div class="feedback">
+          <div class="feedback-top">
+            <h2 class="feedback-title">Напишите нам</h2>
+            <button type="button" class="close-btn"></button>
+          </div>
+          <form class="feedback-form" action="#" method="post">
+            <div class="feedback-name-field">
+              <label for="fullname">Ваше имя:</label>
+              <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="feedback-email-field">
+              <label for="email">Ваш e-mail:</label>
+              <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+            </div>
+            <div class="feedback-text-field">
+              <label for="message">Текст письма:</label>
+              <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </div>
+            <input type="submit" class="form-btn btn" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="wrapper clearfix">
+        <section class="social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link social__link--vk sprite"></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--fb sprite"></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--insta sprite"></a></li>
+          </ul>
+        </section>
+        <div class="social__slogan">
+          <h3 class="social__slogan-title">Давайте дружить, это выгодно!</h3>
+          <p class="social__slogan-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

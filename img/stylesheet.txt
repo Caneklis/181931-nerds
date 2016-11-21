@@ -1,0 +1,36 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-icon {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-fb-icon {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -30px;
+}
+
+.sprite-insta-icon {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -62px;
+}
+
+.sprite-vk-icon {
+    width: 26px;
+    height: 15px;
+    background-position: -5px -93px;
+}
+
+
+
+<i class="sprite sprite-cart-icon"></i>
+<i class="sprite sprite-fb-icon"></i>
+<i class="sprite sprite-insta-icon"></i>
+<i class="sprite sprite-vk-icon"></i>
