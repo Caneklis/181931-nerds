@@ -477,6 +477,16 @@ sup {
   padding: 12px 46px;
 }
 
+.map {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map__adaptive {
+  width: 100%;
+}
+
 .page-title {
   float: left;
   width: 100%;
@@ -1271,8 +1281,8 @@ sup {
   100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 
-@-webkit-keyframes shake {
-  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+/*@-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(100px); transform: translateX(10px); }
   10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
   20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
@@ -1281,4 +1291,4 @@ sup {
   0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
   20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
-}
+}*/
