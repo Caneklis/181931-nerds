@@ -58,15 +58,15 @@ a {
 
 .main-nav {
   float: left;
-  width: 440px;
+  width: 570px;
   margin-top: 75px;
 }
 
 .main-nav__item {
   display: inline-block;
   vertical-align: top;
-  line-height: 30px;
   margin-right: 43px;
+  line-height: 30px;
 }
 
 .main-nav__item:last-child {
@@ -118,31 +118,31 @@ a {
 /*SLIDER*/
 
 .slider{
-  background-color: #eeeeee;
+  position: relative;
   width: 100%;
   min-height: 424px;
-  position: relative;
+  background-color: #eeeeee;
 }
 
 .slider ul{
+  position: relative;
   padding: 0;
   list-style: none;
-  position: relative;
 }
 
 .slide_container{
-  width: 100%;
-  min-height: 336px;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  min-height: 336px;
 }
 
 .slide{
+  display: none;
   padding-top: 56px;
   min-height: 369px;
   min-width: 880px;
-  display: none;
 }
 
 .slide_container input{
@@ -172,11 +172,11 @@ a {
   position: relative;
   z-index: 100;
   width: 160px;
+  padding: 13px 54px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   background-color: #fb565a;
-  padding: 13px 54px;
 }
 
 input[type="radio"]:checked~.slide{
@@ -210,18 +210,18 @@ input[type="radio"]:checked~.slide{
 }
 
 .switcher::after{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -4px;
   content: "";
   display: none;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
-  position: relative;
-  top: 50%;
-  margin-left: -4px;
-  left: 50%;
   margin-top: -4px;
   border-color: #000;
   border: 2px solid #cfcfcf;
+  border-radius: 50%;
 }
 input[type="radio"]:checked+.switcher::after{
   display: block;
@@ -229,12 +229,12 @@ input[type="radio"]:checked+.switcher::after{
 /*SLIDER*/
 
 .main_page_header {
+  width: 523px;
+  margin-top: 15px;
+  margin-bottom: 27px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  margin-top: 15px;
-  margin-bottom: 27px;
-  width: 523px;
 }
 
 /*MAIN*/
@@ -313,9 +313,9 @@ input[type="radio"]:checked+.switcher::after{
 }
 
 .about {
-  border-top: 2px solid #eeeeee;
   padding-top: 70px;
   padding-bottom: 50px;
+  border-top: 2px solid #eeeeee;
 }
 
 .about__description {
@@ -325,27 +325,27 @@ input[type="radio"]:checked+.switcher::after{
 }
 
 .about__title {
+  margin-bottom: 33px;
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 33px;
 }
 
 .about__text {
-  margin-bottom: 40px;
   width: 90%;
+  margin-bottom: 40px;
 }
 
 .about__list-title {
+  margin-bottom: 25px;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 25px;
 }
 
 .about__item {
+  position: relative;
   padding-left: 37px;
   margin-bottom: 24px;
-  position: relative;
 }
 
 .about__item::before {
@@ -410,13 +410,17 @@ sup {
   opacity: 0.2;
 }
 
+.client__link:hover {
+  opacity: 1;
+}
+
 .client__picture {
+  position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 260px;
   height: 183px;
   margin-right: 40px;
-  vertical-align: middle;
-  position: relative;
 }
 
 .client__picture:last-child {
@@ -442,7 +446,6 @@ sup {
   top: 54px;
   left: 50%;
   margin-left: -600px;
-  background-color: #ffffff;
   max-width: 229px;
   min-height: 215px;
   padding-top: 48px;
@@ -450,13 +453,14 @@ sup {
   padding-right: 40px;
   padding-bottom: 47px;
   color: #666666;
+  background-color: #ffffff;
 }
 
 .write-us__title {
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 22px;
   color: #000;
 }
 
@@ -490,11 +494,11 @@ sup {
 .page-title {
   float: left;
   width: 100%;
+  margin-top: 70px;
+  margin-left: -10px;
   text-align: center;
   font-size: 55px;
   line-height: 55px;
-  margin-top: 70px;
-  margin-left: -10px;
 }
 
 /*MAIN*/
@@ -542,9 +546,9 @@ sup {
   vertical-align: middle;
   width: 78px;
   height: 78px;
+  margin-right: 11px;
   background-color: #e1e1e1;
   border-radius: 50%;
-  margin-right: 11px;
 }
 
 .social__link:hover {
@@ -578,8 +582,8 @@ sup {
 
 /*FILTERS*/
 .filters {
-  width: 260px;
   float: left;
+  width: 260px;
   margin-right: 140px
 }
 .filter-row {
@@ -588,15 +592,15 @@ sup {
 }
 .filter-title {
   width: 140px;
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 18px;
+  padding-top: 5px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin: 0px;
-  padding: 0;
-  margin-bottom: 18px;
-  padding-top: 5px;
 }
 .range-filter {
   width: 260px;
@@ -606,12 +610,12 @@ sup {
 .range-controls {
   position: relative;
   height: 41px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
   background: #eeeeee;
   border-radius: 3px;
-  margin-bottom: 13px;
 }
 .range-controls .scale {
   height: 2px;
@@ -628,10 +632,10 @@ sup {
   left: 0px;
   width: 4px;
   height: 4px;
-  border: 8px solid #ffffff;
-  background: #ababab;
   cursor: pointer;
   border-radius: 50%;
+  border: 8px solid #ffffff;
+  background: #ababab;
   box-shadow: 0 2px 1px 0 #cccdcd;
 }
 .range-controls .min-toggle {
@@ -644,11 +648,11 @@ sup {
   font-size: 0;
 }
 .price-controls label {
-  font-size: 16px;
-  text-transform: uppercase;
   display: inline-block;
   vertical-align: bottom;
   width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .max-price {
   text-align: right;
@@ -674,67 +678,67 @@ sup {
   display: none;
 }
 .filters input[type="radio"] + label {
+  position: relative;
   display: block;
   margin: 0;
   line-height: 20px;
   padding-left: 36px;
-  position: relative;
   cursor: pointer;
 }
 .filters input[type="radio"] + label::before {
-  content: "";
-  display: block;
   position: absolute;
-  width: 17px;
-  height: 17px;
-  background: #ffffff;
-  border: 3px solid #b8b8b8;
-  border-radius: 15px;
   left: 0;
   top: -1px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border: 3px solid #b8b8b8;
+  border-radius: 15px;
+  background: #ffffff;
 }
 .filters input[type="radio"]:disabled::before {
+  position: absolute;
+  left: 0;
+  top: -1px;
   content: "";
   display: block;
-  position: absolute;
   width: 17px;
   height: 17px;
   background: #ffffff;
   border: 3px solid #b8b8b8;
   border-radius: 15px;
-  left: 0;
-  top: -1px;
   opacity: 0.3;
 }
 .filters input[type="radio"] + label:hover::before {
+  position: absolute;
+  left: 0;
+  top: -1px;
   content: "";
   display: block;
-  position: absolute;
   width: 17px;
   height: 17px;
   background: #ffffff;
   border: 3px solid #4d4d4d;
   border-radius: 15px;
-  left: 0;
-  top: -1px;
 }
 .filters input[type="radio"]:checked + label::after {
-  content: "";
-  display: block;
   position: absolute;
   left: 8px;
   top: 7px;
+  content: "";
+  display: block;
   width: 7px;
   height: 7px;
   border-radius: 10px;
   background: #b8b8b8;
 }
 .filters input[type="radio"]:checked + label:hover::after {
-  content: "";
-  display: block;
   position: absolute;
   left: 8px;
   top: 7px;
+  content: "";
+  display: block;
   width: 7px;
   height: 7px;
   border-radius: 10px;
@@ -742,14 +746,14 @@ sup {
 }
 .filter-checkbox-title {
   width: 140px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-  font-weight: bold;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 .filters input[type="checkbox"] {
   display: none;
@@ -757,21 +761,21 @@ sup {
 .filters input[type="checkbox"] + label {
   display: block;
   margin: 0;
-  line-height: 20px;
   padding-left: 36px;
+  line-height: 20px;
   position: relative;
   cursor: pointer;
 }
 .filters input[type="checkbox"] + label::before {
+  position: absolute;
+  left: 0;
+  top: 0;
   content: "";
   display: block;
-  position: absolute;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off-icon.png");
   background-repeat: no-repeat;
-  left: 0;
-  top: 0;
   opacity: 0.4
 }
 .filters input[type="checkbox"] + label:hover::before {
@@ -783,15 +787,15 @@ sup {
 }
 
 .filters input[type="checkbox"]:checked + label::after {
-  content: "";
-  display: block;
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("../img/checkbox-on-icon.png");
-  background-repeat: no-repeat;
+  content: "";
+  display: block;
   width: 27px;
   height: 23px;
+  background-image: url("../img/checkbox-on-icon.png");
+  background-repeat: no-repeat;
   opacity: 0.4;
 }
 .filters input[type="checkbox"]:checked + label:hover::after {
@@ -806,9 +810,9 @@ sup {
   vertical-align: top;
   width: 260px;
   margin-top: 35px;
+  padding: 15px 35px;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 35px;
   background: #eeeeee;
   border-radius: 3px;
   border: none;
@@ -816,18 +820,18 @@ sup {
   cursor: pointer;
 }
 .filter-btn:hover {
+  padding: 15px 35px;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 35px;
   background: #dfdfdf;
   border-radius: 3px;
 }
 .filter-btn:active {
-  text-transform: uppercase;
-  text-align: center;
   padding: 13px 35px;
   padding-top: 14px;
   padding-bottom: 12px;
+  text-transform: uppercase;
+  text-align: center;
   background: #d5d5d5;
   border-radius: 3px;
   border-top: 2px solid #bfbfbf;
@@ -993,10 +997,10 @@ sup {
 }
 
 .product__item:hover .product__description {
-  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
+  display: block;
   width: 100%;
   min-height: 230px;
 }
@@ -1007,21 +1011,22 @@ sup {
 }
 
 .product__description-name {
+  padding-top: 23px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 23px;
 }
 
 .product__description-text {
+  padding: 0px 76px;
+  margin-bottom: 47px;
   font-size: 16px;
   line-height: 18px;
   color: #666;
-  padding: 0px 76px;
-  margin-bottom: 47px;
 }
 
 .btn {
+  padding-top: 15px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1031,7 +1036,6 @@ sup {
   height: 35px;
   background-color: #fb565a;
   text-align:center;
-  padding-top: 15px;
   border-radius: 3px;
 }
 
@@ -1050,9 +1054,9 @@ sup {
 }
 
 .paginator {
-  font-size: 0;
   margin-top: 29px;
   margin-bottom: 60px;
+  font-size: 0;
 }
 
 .paginator li {
@@ -1063,17 +1067,17 @@ sup {
 .paginator a {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 12px;
+  height: 50px;
+  min-height: 50px;
+  padding: 0 20px;
   font-size: 16px;
   font-weight: 500;
   line-height: 50px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  margin-right: 12px;
-  height: 50px;
-  min-height: 50px;
   background-color: #eeeeee;
-  padding: 0 20px;
   border-radius: 3px;
 }
 
@@ -1088,12 +1092,12 @@ sup {
 }
 
 .paginator .current {
-  border: 3px solid #dbdbdb;
-  background-color: #ffffff;
   height: 44px;
   min-height: 44px;
-  line-height: 44px;
   padding: 0 17px;
+  border: 3px solid #dbdbdb;
+  background-color: #ffffff;
+  line-height: 44px;
 }
 
 .paginator .next {
@@ -1109,18 +1113,16 @@ sup {
   display: none;
   position: fixed;
   z-index: 2000;
-  top: 240px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  left: 49%;
+  top: 226px;
+  left: 23.7%;
   width: 760px;
-  color: #000000;
-  background: #ffffff;
-  box-shadow: 0 6px 35px 2px black;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 65px;
   padding-bottom: 84px;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 6px 35px 2px black;
 }
 
 .feedback-show {
@@ -1134,25 +1136,25 @@ sup {
 }
 
 .feedback-title {
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
   color: #000000;
   text-align: left;
-  margin: 0;
-  padding: 0;
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 43px;
   font-weight: 500;
 }
 
 .close-btn {
-  border: none;
-  outline: none;
-  text-align: right;
   position: absolute;
   top: 13px;
   right: -11px;
   width: 21px;
   height: 21px;
+  border: none;
+  outline: none;
+  text-align: right;
   font-size: 0;
   cursor: pointer;
   background-color: #ffffff;
@@ -1160,10 +1162,10 @@ sup {
 
 .close-btn::before,
 .close-btn::after {
-  content: "";
   position: absolute;
   top: 11px;
   right: 0px;
+  content: "";
   width: 23px;
   height: 4px;
   background-color: #fb565a;
@@ -1194,36 +1196,36 @@ sup {
 }
 
 .feedback-name-field {
-  font-weight: bold;
   float: left;
   width: 340px;
-  color: #7f7f7f;
   margin-right: 61px;
+  color: #7f7f7f;
+  font-weight: bold;
 }
 
 .feedback-email-field {
-  font-weight: bold;
   float: left;
   width: 340px;
+  font-weight: bold;
 }
 
 .feedback-text-field  {
-  font-weight: bold;
   width: 760px;
   clear: both;
+  font-weight: bold;
 }
 
 .feedback input[type="text"] {
-  font-family: "Roboto", "Arial", sans-serif;
   width: 100%;
   height: 46px;
+  margin-top: 3px;
+  margin-bottom: 29px;
+  padding-left: 13px;
+  font-family: "Roboto", "Arial", sans-serif;
   border: none;
   outline: none;
   border: 2px solid #eeeeee;
   border-radius: 3px;
-  margin-top: 3px;
-  margin-bottom: 29px;
-  padding-left: 13px;
 }
 
 .error {
@@ -1240,17 +1242,17 @@ sup {
 }
 
 .feedback textarea {
-  font-family: "Roboto", "Arial", sans-serif;
   width: 744px;
   margin-top: 6px;
   margin-bottom: 47px;
+  padding-left: 13px;
+  padding-top: 12px;
+  padding-bottom: 49px;
+  font-family: "Roboto", "Arial", sans-serif;
   border: none;
   outline: none;
   border: 2px solid #eeeeee;
   border-radius: 3px;
-  padding-left: 13px;
-  padding-top: 12px;
-  padding-bottom: 49px;
   resize: none;
 }
 
@@ -1259,11 +1261,11 @@ sup {
 }
 
 .feedback .btn {
+  width: 34%;
+  padding: 17px 80px 30px 80px;
   border: none;
   outline: none;
   border: 0;
-  padding: 17px 80px 30px 80px;
-  width: 34%;
   cursor: pointer;
 }
 
@@ -1281,14 +1283,53 @@ sup {
   100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 
-/*@-webkit-keyframes shake {
-  0%, 100% { -webkit-transform: translateX(100px); transform: translateX(10px); }
-  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+
 @keyframes shake {
-  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
-}*/
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}

@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -114,7 +114,7 @@
           <div class="phone">
             <span>тел.</span><a href="tel:+78122757575"> +7 (812) 275-75-75</a>
           </div>
-          <a class="btn writeus-btn" href="#">Напишите нам</a>
+          <a class="btn writeus-btn" href="write.html">Напишите нам</a>
         </div>
         <div class="feedback">
           <div class="feedback-top">
@@ -124,15 +124,15 @@
           <form class="feedback-form" action="#" method="post">
             <div class="feedback-name-field">
               <label for="fullname">Ваше имя:</label>
-              <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+              <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="feedback-email-field">
               <label for="email">Ваш e-mail:</label>
-              <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
+              <input type="text" name="email" id="email" placeholder="Для отправки ответа">
             </div>
             <div class="feedback-text-field">
               <label for="message">Текст письма:</label>
-              <textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
+              <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
             </div>
             <input type="submit" class="form-btn btn" value="Отправить">
           </form>
