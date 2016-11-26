@@ -507,6 +507,7 @@ sup {
 
 .main-footer {
   padding-top: 62px;
+  padding-bottom: 70px;
 }
 
 .sprite {
@@ -1113,8 +1114,10 @@ sup {
   display: none;
   position: fixed;
   z-index: 2000;
-  top: 226px;
-  left: 23.7%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 760px;
   padding-left: 100px;
   padding-right: 100px;
@@ -1127,8 +1130,8 @@ sup {
 
 .feedback-show {
   display: block;
-  -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  -webkit-animation: opacity 0.7s;
+          animation: opacity 0.7s;
 }
 
 .feedback-top {
@@ -1269,67 +1272,38 @@ sup {
   cursor: pointer;
 }
 
-@-webkit-keyframes bounce {
-  0% { -webkit-transform: translateX(-100px); transform: translateX(-100px); }
-  60% { -webkit-transform: translateX(30px); transform: translateX(30px); }
-  90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  100% { -webkit-transform: translateX(0); transform: translateX(0); }
-}
-
-@keyframes bounce {
-  0% { -webkit-transform: translateX(-100px); transform: translateX(-100px); }
-  60% { -webkit-transform: translateX(30px); transform: translateX(30px); }
-  90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-  100% { -webkit-transform: translateX(0); transform: translateX(0); }
-}
-
-@keyframes bounce {
-  0%   {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
   }
-  70%  {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+  40% {
+   opacity: 0.4;
   }
-  90%  {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+  70% {
+   opacity: 0.7;
+  }
+  90% {
+   opacity: 0.9;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+   opacity: 1;
   }
 }
 
-
-@-webkit-keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+@keyframes opacity {
+  0% {
+    opacity: 0;
   }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+  40% {
+   opacity: 0.4;
   }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+  70% {
+   opacity: 0.7;
   }
-}
-
-
-@keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  90% {
+   opacity: 0.9;
   }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+  100% {
+   opacity: 1;
   }
 }
